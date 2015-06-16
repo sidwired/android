@@ -1,8 +1,8 @@
 package com.example.sidc.myapplication;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     public final static String EXTRA_MESSAGE = "com.example.sidc.myapplication.MESSAGE";
 
@@ -35,10 +35,10 @@ public class MainActivity extends ActionBarActivity {
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.action_search:
-                openSearch();
+                //openSearch();
                 return true;
             case R.id.action_settings:
-                openSettings();
+                //openSettings();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

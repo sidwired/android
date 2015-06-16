@@ -1,14 +1,14 @@
 package com.example.sidc.myapplication;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 
-public class DisplayMessageActivity extends ActionBarActivity {
+public class DisplayMessageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
         textView.setTextSize(80);
         textView.setText(message);
         setContentView(textView);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getDelegate().getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
